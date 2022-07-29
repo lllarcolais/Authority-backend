@@ -1,0 +1,29 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        password: nacos
+    gateway:
+#      路由规则
+      routes:
+        - id: user_route  # 路由的唯一标识，路由到user
+          uri: lb://user-service  # lb: load balance, 使用nacos的本地负载均衡策略
+          # 断言规则 用于路由规则的匹配
+          predicates:
+            - Path=/user-serv/**
+            - CheckAuth=cx
+#            - Query=age,20
+          filters:
+            - StripPrefix=1
+            - AddRequestHeader=X-Request-color,red
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8089
+
+

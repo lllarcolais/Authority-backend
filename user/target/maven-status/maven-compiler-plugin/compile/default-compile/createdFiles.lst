@@ -1,0 +1,8 @@
+com\example\springbootmybatis\service\UserService.class
+com\example\springbootmybatis\controller\UserController.class
+com\example\springbootmybatis\service\UserServiceImpl.class
+com\example\springbootmybatis\dao\UserDao.class
+com\example\springbootmybatis\pojo\query\UserQuery.class
+com\example\springbootmybatis\SpringbootMybatisApplication.class
+com\example\springbootmybatis\config\SwaggerConfig.class
+com\example\springbootmybatis\pojo\User.class

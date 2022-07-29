@@ -1,0 +1,45 @@
+2022-07-18 16:38:16.378  INFO 6292 --- [main] c.e.s.SpringbootMybatisApplication       : The following profiles are active: dev
+2022-07-18 16:38:19.493  INFO 6292 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=01649f2e-4e20-3e83-9d41-bc890b865ac4
+2022-07-18 16:38:20.695  INFO 6292 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
+2022-07-18 16:38:20.717  INFO 6292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-18 16:38:20.718  INFO 6292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-07-18 16:38:20.898  INFO 6292 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-18 16:38:20.904  INFO 6292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4456 ms
+2022-07-18 16:38:22.820  INFO 6292 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-18 16:38:22.883  WARN 6292 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-18 16:38:22.884  INFO 6292 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-18 16:38:22.892  WARN 6292 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-18 16:38:22.892  INFO 6292 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-18 16:38:23.200  INFO 6292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-18 16:38:23.386  INFO 6292 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-18 16:38:24.234  INFO 6292 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-07-18 16:38:25.399  INFO 6292 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2022-07-18 16:38:25.400  INFO 6292 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2022-07-18 16:38:28.476  WARN 6292 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8020 is already in use
+2022-07-18 16:38:29.127  INFO 6292 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-07-18 16:38:29.128  INFO 6292 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2022-07-18 16:38:29.128  INFO 6292 --- [main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2022-07-18 16:38:29.353  INFO 6292 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-18 16:38:29.369  INFO 6292 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2022-07-18 16:38:29.371  INFO 6292 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-18 16:38:29.511  INFO 6292 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-18 16:38:29.555 ERROR 6292 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8020 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8020 or configure this application to listen on another port.
+
+2022-07-18 16:38:29.557  WARN 6292 --- [Thread-9] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2022-07-18 16:38:29.557  WARN 6292 --- [Thread-6] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2022-07-18 16:38:29.557  WARN 6292 --- [Thread-6] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2022-07-18 16:38:29.558  WARN 6292 --- [Thread-9] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
