@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootmybatis.dao.RoleDao">
+    <select id="listRole" resultType="com.example.springbootmybatis.pojo.Role">
+        select *
+        from mybatis.role as a;
+    </select>
+
+    <select id="queryRoleById" parameterType="int" resultType="com.example.springbootmybatis.pojo.Role">
+        select *
+        from mybatis.role as a
+        where a.id=#{id};
+    </select>
+
+    <select id="queryRoleByName" parameterType="String" resultType="com.example.springbootmybatis.pojo.Role">
+        select *
+        from mybatis.role as a
+        where a.name=#{name};
+    </select>
+
+    <delete id="deleteRoleById" parameterType="int">
+        delete from mybatis.role
+        where id=#{id};
+    </delete>
+
+    <update id="updateRole" parameterType="com.example.springbootmybatis.pojo.Role">
+        update mybatis.role
+        set name=#{name}, info=#{info}, state=#{state}, remark=#{remark}
+        where id=#{id};
+    </update>
+
+    <insert id="addRole" parameterType="com.example.springbootmybatis.pojo.Role">
+        insert into mybatis.role(id,name,info,state,remark)
+        values(#{id},#{name},#{info},#{state},#{remark});
+    </insert>
+</mapper>

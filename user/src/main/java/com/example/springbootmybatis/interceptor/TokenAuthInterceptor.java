@@ -38,13 +38,20 @@ public class TokenAuthInterceptor extends HandlerInterceptorAdapter {
         }
 
         String requestURI = request.getRequestURI();
+        System.out.println(requestURI);
 
         String token = request.getHeader("token");
+        Integer userId = Integer.parseInt(request.getHeader("userId"));
+        System.out.println("header获取userId为"+userId);
         if (StringUtils.isBlank(token)){
             logger.error("Token值不能为空！", requestURI);
             return false;
         } else {
-            return validateToken(token, requestURI);
+            if (validateToken(token, requestURI)){
+                return UserInfoUtils.checkUrl(userId,requestURI);
+            }else{
+                return false;
+            }
         }
     }
 
@@ -62,8 +69,10 @@ public class TokenAuthInterceptor extends HandlerInterceptorAdapter {
                     if (expiredTime > nowTime){
 
                     }
-//                    设置token过期时间为1分钟
-                    redisTemplate.expire("token", 1, TimeUnit.MINUTES);
+//                    设置token过期时间为60分钟
+                    redisTemplate.expire("token", 60, TimeUnit.MINUTES);
+                    redisTemplate.expire("userId", 60, TimeUnit.MINUTES);
+                    redisTemplate.expire("roleList", 60, TimeUnit.MINUTES);
                     allowed = true;
                 } catch (Exception e) {
                     logger.error("校验Token异常: {}, uri: {}", e.getMessage(), uri);

@@ -1,9 +1,19 @@
 package com.example.springbootmybatis.pojo;
 
-public class User {
+public class User extends SysInfo{
     private Integer id;
     private String name;
     private String pwd;
+    private String salt;
+    private Integer departmentId;
+
+    public Integer getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setDepartmentId(Integer departmentId) {
+        this.departmentId = departmentId;
+    }
 
     public Integer getId() {
         return id;
@@ -27,6 +37,14 @@ public class User {
 
     public void setPwd(String pwd) {
         this.pwd = pwd;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
     }
 
     @Override

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootmybatis.dao.DataPermissionDao">
+    <select id="queryDataPermission" resultType="com.example.springbootmybatis.pojo.Data_Permission">
+        select * from mybatis.data_permission
+        <where>
+            <if test="userId != null">
+                and userId = #{userId}
+            </if>
+            <if test="resourceId != null">
+                and resourceId = #{resourceId}
+            </if>
+        </where>
+    </select>
+
+    <select id="getCreateByMyselfData" resultType="int">
+        select id from
+        <if test="resource == 'user'">
+            mybatis.user
+        </if>
+        <if test="resource == 'role'">
+            mybatis.role
+        </if>
+        <if test="resource == 'permission'">
+            mybatis.permission
+        </if>
+        where createBy = #{userId};
+    </select>
+
+    <select id="getAuthorizedData" resultType="int">
+        select u.id from mybatis.data_permission as dataPerm join
+            <if test="resource == 'user'">
+                mybatis.user as u on dataPerm.resourceId = u.departmentId
+            </if>
+            where dataPerm.userId = #{userId}
+            <if test="id != null and id != ''">
+                and u.id = #{id}
+            </if>
+    </select>
+</mapper>

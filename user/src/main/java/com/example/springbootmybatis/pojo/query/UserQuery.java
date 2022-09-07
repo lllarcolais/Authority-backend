@@ -4,6 +4,15 @@ public class UserQuery {
     private Integer pageNum = 1; // 当前页码
     private Integer pagesize = 2; // 每一页所显示的数量
     private String name; // 根据用户名查询
+    private Integer id;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getPageNum() {
         return pageNum;

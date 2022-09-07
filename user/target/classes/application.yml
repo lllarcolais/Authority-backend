@@ -4,6 +4,9 @@ server:
 
 # 数据库数据源
 spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
@@ -36,6 +39,7 @@ spring:
 mybatis:
   type-aliases-package: com.example.springbootmybatis.pojo # 别名
   mapper-locations: classpath:/mybatis/*.xml # xml文件
+  config-location: classpath:mybatis-config.xml
 
 logging:
   file:

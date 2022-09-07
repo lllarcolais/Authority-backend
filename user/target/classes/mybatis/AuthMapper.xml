@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootmybatis.dao.AuthDao">
+    <select id="listAuthMenu" resultType="com.example.springbootmybatis.pojo.AuthMenu">
+        select g.name userName, h.* from mybatis.user g left join(
+            select e.userID, f.* from mybatis.user_role e join(
+                select c.name roleName, d.* from mybatis.role c join(
+                    select roleID, permissionID, permission, pid
+                    from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id
+                    where b.type = "菜单") d
+                                                            on c.id = d.roleID) f
+                                                      on e.roleID = f.roleID) h
+                                                         on g.id = h.userID;
+    </select>
+
+    <select id="rawUserMenu" parameterType="int" resultType="com.example.springbootmybatis.pojo.AuthMenu">
+        select g.name userName, h.* from mybatis.user g left join(
+            select e.userID, f.* from mybatis.user_role e join(
+                select c.name roleName, d.* from mybatis.role c join(
+                    select roleID, permissionID, permission, pid, url
+                    from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id
+                    where b.type = "菜单") d
+                                                                    on c.id = d.roleID) f
+                                                              on e.roleID = f.roleID) h
+                                                                 on g.id = h.userID
+        where userID = #{userId};
+    </select>
+
+    <select id="authUrl" parameterType="int" resultType="com.example.springbootmybatis.pojo.AuthMenu">
+        select g.name userName, h.* from mybatis.user g left join(
+            select e.userID, f.* from mybatis.user_role e join(
+                select c.name roleName, d.* from mybatis.role c join(
+                    select roleID, permissionID, permission, pid, url
+                    from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d
+                                                                    on c.id = d.roleID) f
+                                                              on e.roleID = f.roleID) h
+                                                                 on g.id = h.userID
+        where userID = #{userId};
+    </select>
+
+    <select id="getRole" parameterType="int" resultType="com.example.springbootmybatis.pojo.Role">
+        select b.*
+        from mybatis.user_role a join mybatis.role b
+        on a.roleId = b.id
+        where a.userId = #{userId}
+    </select>
+
+</mapper>

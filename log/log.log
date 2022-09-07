@@ -1,200 +1,510 @@
-2022-07-29 11:37:58.124  INFO 8952 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : The following profiles are active: dev
-2022-07-29 11:37:58.727  INFO 8952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-07-29 11:37:58.729  INFO 8952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-29 11:37:58.748  INFO 8952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
-2022-07-29 11:37:58.917  INFO 8952 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b4d14dbf-b21e-3a5a-ad9f-0b83c57c99ea
-2022-07-29 11:37:58.949  INFO 8952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.example.springbootmybatis.config.RedisConfig$$EnhancerBySpringCGLIB$$e5c7cff7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-29 11:37:59.315  INFO 8952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
-2022-07-29 11:37:59.323  INFO 8952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-29 11:37:59.324  INFO 8952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
-2022-07-29 11:37:59.432  INFO 8952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-29 11:37:59.432  INFO 8952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1293 ms
-2022-07-29 11:38:00.161  INFO 8952 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-07-29 11:38:00.177  WARN 8952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-29 11:38:00.178  INFO 8952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-29 11:38:00.181  WARN 8952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-29 11:38:00.181  INFO 8952 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-29 11:38:00.259  INFO 8952 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-29 11:38:00.290  INFO 8952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-29 11:38:00.320  INFO 8952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-07-29 11:38:01.825  INFO 8952 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-07-29 11:38:01.839  INFO 8952 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
-2022-07-29 11:38:03.457  INFO 8952 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-07-29 11:38:03.576  INFO 8952 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2022-07-29 11:38:03.577  INFO 8952 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2022-07-29 11:38:05.254  INFO 8952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8020 (http) with context path ''
-2022-07-29 11:38:05.262  INFO 8952 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.159.1:8020 register finished
-2022-07-29 11:38:06.695  INFO 8952 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-07-29 11:38:06.695  INFO 8952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2022-07-29 11:38:06.705  INFO 8952 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
-2022-07-29 11:38:06.738  INFO 8952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2022-07-29 11:38:06.936  INFO 8952 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2022-07-29 11:38:06.940  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
-2022-07-29 11:38:06.944  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
-2022-07-29 11:38:06.946  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_1
-2022-07-29 11:38:06.949  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUserByIdUsingGET_1
-2022-07-29 11:38:06.951  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPubKeyUsingGET_1
-2022-07-29 11:38:06.958  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
-2022-07-29 11:38:06.960  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserUsingGET_1
-2022-07-29 11:38:06.963  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserByNameUsingPOST_1
-2022-07-29 11:38:06.965  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logOutUsingGET_1
-2022-07-29 11:38:06.967  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAuthUsingPOST_1
-2022-07-29 11:38:06.970  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: toEditUsingGET_1
-2022-07-29 11:38:06.973  INFO 8952 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
-2022-07-29 11:38:06.980  INFO 8952 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : Started SpringbootMybatisApplication in 12.407 seconds (JVM running for 13.384)
-2022-07-29 11:38:22.181  INFO 8952 --- [http-nio-8020-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-29 11:38:22.181  INFO 8952 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-29 11:38:22.186  INFO 8952 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-07-29 11:38:22.200 ERROR 8952 --- [http-nio-8020-exec-1] c.e.s.interceptor.TokenAuthInterceptor   : Token值不能为空！
-2022-07-29 11:39:11.456 ERROR 8952 --- [http-nio-8020-exec-2] c.e.s.interceptor.TokenAuthInterceptor   : Token值不能为空！
-2022-07-29 13:17:59.231 ERROR 8952 --- [http-nio-8020-exec-5] c.e.s.interceptor.TokenAuthInterceptor   : Token值不能为空！
-2022-07-29 13:18:03.905 ERROR 8952 --- [http-nio-8020-exec-6] c.e.s.interceptor.TokenAuthInterceptor   : Token值不能为空！
-2022-07-29 13:22:52.202 ERROR 8952 --- [http-nio-8020-exec-9] c.e.s.interceptor.TokenAuthInterceptor   : Token值不能为空！
-2022-07-29 13:23:02.370  WARN 8952 --- [Thread-32] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-2022-07-29 13:23:02.370  WARN 8952 --- [Thread-29] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-2022-07-29 13:23:02.371  WARN 8952 --- [Thread-29] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-2022-07-29 13:23:02.371  WARN 8952 --- [Thread-32] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-2022-07-29 13:23:02.618  INFO 8952 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
-2022-07-29 13:23:02.623  INFO 8952 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-2022-07-29 13:23:02.625  INFO 8952 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-2022-07-29 13:23:02.971  INFO 8952 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-07-29 13:23:02.974  INFO 8952 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2022-07-29 13:23:09.920  INFO 11860 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : The following profiles are active: dev
-2022-07-29 13:23:10.494  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-07-29 13:23:10.496  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-07-29 13:23:10.517  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
-2022-07-29 13:23:10.683  INFO 11860 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b4d14dbf-b21e-3a5a-ad9f-0b83c57c99ea
-2022-07-29 13:23:10.713  INFO 11860 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.example.springbootmybatis.config.RedisConfig$$EnhancerBySpringCGLIB$$d0c1af48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-29 13:23:11.078  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
-2022-07-29 13:23:11.085  INFO 11860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-29 13:23:11.087  INFO 11860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
-2022-07-29 13:23:11.198  INFO 11860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-29 13:23:11.198  INFO 11860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1268 ms
-2022-07-29 13:23:11.914  INFO 11860 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-07-29 13:23:11.932  WARN 11860 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-29 13:23:11.932  INFO 11860 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-29 13:23:11.934  WARN 11860 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-29 13:23:11.935  INFO 11860 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-29 13:23:12.013  INFO 11860 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-29 13:23:12.047  INFO 11860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-29 13:23:12.077  INFO 11860 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-07-29 13:23:13.592  INFO 11860 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-07-29 13:23:13.596  INFO 11860 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
-2022-07-29 13:23:15.188  INFO 11860 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-07-29 13:23:15.285  INFO 11860 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2022-07-29 13:23:15.285  INFO 11860 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2022-07-29 13:23:16.922  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8020 (http) with context path ''
-2022-07-29 13:23:16.931  INFO 11860 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.159.1:8020 register finished
-2022-07-29 13:23:18.382  INFO 11860 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-07-29 13:23:18.384  INFO 11860 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2022-07-29 13:23:18.413  INFO 11860 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
-2022-07-29 13:23:18.460  INFO 11860 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2022-07-29 13:23:18.649  INFO 11860 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2022-07-29 13:23:18.653  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
-2022-07-29 13:23:18.656  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
-2022-07-29 13:23:18.659  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editUsingPOST_1
-2022-07-29 13:23:18.662  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUserByIdUsingGET_1
-2022-07-29 13:23:18.664  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPubKeyUsingGET_1
-2022-07-29 13:23:18.669  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingGET_1
-2022-07-29 13:23:18.671  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserUsingGET_1
-2022-07-29 13:23:18.673  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserByNameUsingPOST_1
-2022-07-29 13:23:18.675  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logOutUsingGET_1
-2022-07-29 13:23:18.677  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAuthUsingPOST_1
-2022-07-29 13:23:18.678  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: toEditUsingGET_1
-2022-07-29 13:23:18.681  INFO 11860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
-2022-07-29 13:23:18.689  INFO 11860 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : Started SpringbootMybatisApplication in 12.369 seconds (JVM running for 13.264)
-2022-07-29 13:24:16.280  INFO 11860 --- [http-nio-8020-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-29 13:24:16.280  INFO 11860 --- [http-nio-8020-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-29 13:24:16.288  INFO 11860 --- [http-nio-8020-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2022-07-29 13:24:16.668 ERROR 11860 --- [http-nio-8020-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.crypto.BadPaddingException: Decryption error] with root cause
-
-javax.crypto.BadPaddingException: Decryption error
-	at sun.security.rsa.RSAPadding.unpadV15(RSAPadding.java:380) ~[na:1.8.0_144]
-	at sun.security.rsa.RSAPadding.unpad(RSAPadding.java:291) ~[na:1.8.0_144]
-	at com.sun.crypto.provider.RSACipher.doFinal(RSACipher.java:363) ~[sunjce_provider.jar:1.8.0_112]
-	at com.sun.crypto.provider.RSACipher.engineDoFinal(RSACipher.java:389) ~[sunjce_provider.jar:1.8.0_112]
-	at javax.crypto.Cipher.doFinal(Cipher.java:2165) ~[na:1.8.0_121]
-	at com.example.springbootmybatis.util.RSAEncryptUtil.decrypt(RSAEncryptUtil.java:107) ~[classes/:na]
-	at com.example.springbootmybatis.service.LoginServiceImpl.login(LoginServiceImpl.java:32) ~[classes/:na]
-	at com.example.springbootmybatis.controller.UserController.loginAuth(UserController.java:41) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_144]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_144]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_144]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_144]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.15.RELEASE.jar:5.2.15.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2022-07-29 14:02:47.180  INFO 11860 --- [http-nio-8020-exec-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-07-29 14:02:47.303 DEBUG 11860 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user where id=?;
-2022-07-29 14:02:47.318 DEBUG 11860 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 1(Integer)
-2022-07-29 14:02:47.334 DEBUG 11860 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
-2022-07-29 14:02:48.808 ERROR 11860 --- [http-nio-8020-exec-5] c.e.s.interceptor.TokenAuthInterceptor   : 校验Token异常: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error., uri: /home
-2022-07-29 14:05:13.164  WARN 11860 --- [http-nio-8020-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 145821
-2022-07-29 14:05:13.175 DEBUG 11860 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user where id=?;
-2022-07-29 14:05:13.176 DEBUG 11860 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 1(Integer)
-2022-07-29 14:05:13.177 DEBUG 11860 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
-2022-07-29 14:05:14.399 DEBUG 11860 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.listUser               : ==>  Preparing: select * from mybatis.user;
-2022-07-29 14:05:14.399 DEBUG 11860 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.listUser               : ==> Parameters: 
-2022-07-29 14:05:14.401 DEBUG 11860 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.listUser               : <==      Total: 5
-2022-07-29 14:09:10.317  WARN 11860 --- [http-nio-8020-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 235916
-2022-07-29 14:09:10.336 DEBUG 11860 --- [http-nio-8020-exec-9] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user where id=?;
-2022-07-29 14:09:10.337 DEBUG 11860 --- [http-nio-8020-exec-9] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 1(Integer)
-2022-07-29 14:09:10.339 DEBUG 11860 --- [http-nio-8020-exec-9] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
-2022-07-29 14:11:06.978  WARN 11860 --- [http-nio-8020-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 116639
-2022-07-29 14:11:06.993 DEBUG 11860 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUser               : ==>  Preparing: select * from mybatis.user;
-2022-07-29 14:11:06.994 DEBUG 11860 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUser               : ==> Parameters: 
-2022-07-29 14:11:07.002 DEBUG 11860 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUser               : <==      Total: 5
-2022-07-29 14:11:22.127  WARN 11860 --- [Thread-29] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-2022-07-29 14:11:22.127  WARN 11860 --- [Thread-32] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-2022-07-29 14:11:22.127  WARN 11860 --- [Thread-29] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-2022-07-29 14:11:22.128  WARN 11860 --- [Thread-32] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-2022-07-29 14:11:22.378  INFO 11860 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
-2022-07-29 14:11:22.383  INFO 11860 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-2022-07-29 14:11:22.386  INFO 11860 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-2022-07-29 14:11:22.734  INFO 11860 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-07-29 14:11:22.746  INFO 11860 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-07-29 14:11:22.757  INFO 11860 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-09-06 10:57:46.840  INFO 10336 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : The following profiles are active: dev
+2022-09-06 10:57:47.587  INFO 10336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-09-06 10:57:47.589  INFO 10336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-06 10:57:47.619  INFO 10336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2022-09-06 10:57:47.807  INFO 10336 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b40d4ccc-e716-3892-860e-08fb2b3337e6
+2022-09-06 10:57:47.978  INFO 10336 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.example.springbootmybatis.config.RedisConfig$$EnhancerBySpringCGLIB$$130e3a5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 10:57:48.386  INFO 10336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
+2022-09-06 10:57:48.396  INFO 10336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 10:57:48.396  INFO 10336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-09-06 10:57:48.553  INFO 10336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 10:57:48.553  INFO 10336 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
+2022-09-06 10:57:49.500  INFO 10336 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-06 10:57:49.516  WARN 10336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 10:57:49.516  INFO 10336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 10:57:49.523  WARN 10336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 10:57:49.523  INFO 10336 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 10:57:49.618  INFO 10336 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-06 10:57:49.661  INFO 10336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 10:57:49.695  INFO 10336 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-09-06 10:57:50.221  INFO 10336 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 10:57:50.977  INFO 10336 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2022-09-06 10:57:50.977  INFO 10336 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2022-09-06 10:57:53.444  INFO 10336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8020 (http) with context path ''
+2022-09-06 10:57:53.460  INFO 10336 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.159.1:8020 register finished
+2022-09-06 10:57:53.912  INFO 10336 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-06 10:57:53.927  INFO 10336 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-09-06 10:57:53.959  INFO 10336 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 10:57:54.034  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_1
+2022-09-06 10:57:54.164  INFO 10336 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 10:57:54.166  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: authUrlUsingGET_1
+2022-09-06 10:57:54.169  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_2
+2022-09-06 10:57:54.172  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_3
+2022-09-06 10:57:54.174  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rawAuthMenuUsingGET_1
+2022-09-06 10:57:54.175  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPubKeyUsingGET_1
+2022-09-06 10:57:54.175  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logOutUsingGET_1
+2022-09-06 10:57:54.179  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAuthUsingPOST_1
+2022-09-06 10:57:54.182  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addPermissionUsingPOST_1
+2022-09-06 10:57:54.184  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletePermissionByIdUsingPOST_1
+2022-09-06 10:57:54.186  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listPermissionUsingGET_1
+2022-09-06 10:57:54.188  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryPermissionByIdUsingGET_1
+2022-09-06 10:57:54.189  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: treePermissionUsingGET_1
+2022-09-06 10:57:54.191  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updatePermissionUsingPOST_1
+2022-09-06 10:57:54.194  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addRoleUsingPOST_1
+2022-09-06 10:57:54.196  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRoleByIdUsingGET_1
+2022-09-06 10:57:54.199  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listRoleUsingGET_1
+2022-09-06 10:57:54.200  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryRoleByIdUsingGET_1
+2022-09-06 10:57:54.202  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRoleUsingPOST_1
+2022-09-06 10:57:54.205  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-09-06 10:57:54.207  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2022-09-06 10:57:54.209  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUserByIdUsingGET_1
+2022-09-06 10:57:54.214  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2022-09-06 10:57:54.216  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserUsingGET_1
+2022-09-06 10:57:54.220  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserByNameUsingPOST_1
+2022-09-06 10:57:54.224  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: permissionUsingGET_1
+2022-09-06 10:57:54.226  INFO 10336 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2022-09-06 10:57:54.237  INFO 10336 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : Started SpringbootMybatisApplication in 9.028 seconds (JVM running for 10.005)
+2022-09-06 10:58:40.735  INFO 10336 --- [http-nio-8020-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 10:58:40.736  INFO 10336 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 10:58:40.743  INFO 10336 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-09-06 10:58:40.948  INFO 10336 --- [http-nio-8020-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-06 10:58:41.567 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =null)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 10:58:41.585 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 13(Integer)
+2022-09-06 10:58:41.633 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 0
+2022-09-06 10:59:37.952 DEBUG 10336 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 10:59:37.953 DEBUG 10336 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 1(Integer)
+2022-09-06 10:59:37.957 DEBUG 10336 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 10:59:38.179 DEBUG 10336 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.getRole                : ==>  Preparing: select b.* from mybatis.user_role a join mybatis.role b on a.roleId = b.id where a.userId = ?
+2022-09-06 10:59:38.179 DEBUG 10336 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.getRole                : ==> Parameters: 1(Integer)
+2022-09-06 10:59:38.183 DEBUG 10336 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.getRole                : <==      Total: 1
+2022-09-06 10:59:41.765 DEBUG 10336 --- [http-nio-8020-exec-9] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 10:59:41.766 DEBUG 10336 --- [http-nio-8020-exec-9] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 1(Integer)
+2022-09-06 10:59:41.771 DEBUG 10336 --- [http-nio-8020-exec-9] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 4
+2022-09-06 10:59:43.435 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 10:59:43.436 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 1(Integer)
+2022-09-06 10:59:43.440 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.authUrl                : <==      Total: 12
+2022-09-06 10:59:43.458 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.RoleDao.queryRoleByName        : ==>  Preparing: select * from mybatis.role as a where a.name=?;
+2022-09-06 10:59:43.460 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.RoleDao.queryRoleByName        : ==> Parameters: 超级管理员(String)
+2022-09-06 10:59:43.461 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.RoleDao.queryRoleByName        : <==      Total: 1
+2022-09-06 10:59:43.483 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a
+2022-09-06 10:59:43.483 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 
+2022-09-06 10:59:43.486 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName         : <==      Total: 11
+2022-09-06 10:59:43.496 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName_COUNT   : ==>  Preparing: SELECT count(0) FROM mybatis.user AS a
+2022-09-06 10:59:43.496 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName_COUNT   : ==> Parameters: 
+2022-09-06 10:59:43.500 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName_COUNT   : <==      Total: 1
+2022-09-06 10:59:43.501 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a LIMIT ?
+2022-09-06 10:59:43.502 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 3(Integer)
+2022-09-06 10:59:43.504 DEBUG 10336 --- [http-nio-8020-exec-10] c.e.s.dao.UserDao.listUserByName         : <==      Total: 3
+2022-09-06 10:59:55.232 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 10:59:55.233 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 1(Integer)
+2022-09-06 10:59:55.240 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.authUrl                : <==      Total: 12
+2022-09-06 10:59:55.253 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.RoleDao.queryRoleByName        : ==>  Preparing: select * from mybatis.role as a where a.name=?;
+2022-09-06 10:59:55.254 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.RoleDao.queryRoleByName        : ==> Parameters: 超级管理员(String)
+2022-09-06 10:59:55.256 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.RoleDao.queryRoleByName        : <==      Total: 1
+2022-09-06 10:59:55.257 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a
+2022-09-06 10:59:55.258 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 
+2022-09-06 10:59:55.261 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName         : <==      Total: 11
+2022-09-06 10:59:55.263 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName_COUNT   : ==>  Preparing: SELECT count(0) FROM mybatis.user AS a
+2022-09-06 10:59:55.263 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName_COUNT   : ==> Parameters: 
+2022-09-06 10:59:55.265 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName_COUNT   : <==      Total: 1
+2022-09-06 10:59:55.266 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a LIMIT ?, ?
+2022-09-06 10:59:55.266 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 3(Long), 3(Integer)
+2022-09-06 10:59:55.267 DEBUG 10336 --- [http-nio-8020-exec-1] c.e.s.dao.UserDao.listUserByName         : <==      Total: 3
+2022-09-06 10:59:57.133 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 10:59:57.133 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 1(Integer)
+2022-09-06 10:59:57.137 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : <==      Total: 12
+2022-09-06 10:59:57.149 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.RoleDao.queryRoleByName        : ==>  Preparing: select * from mybatis.role as a where a.name=?;
+2022-09-06 10:59:57.150 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.RoleDao.queryRoleByName        : ==> Parameters: 超级管理员(String)
+2022-09-06 10:59:57.152 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.RoleDao.queryRoleByName        : <==      Total: 1
+2022-09-06 10:59:57.153 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a
+2022-09-06 10:59:57.154 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 
+2022-09-06 10:59:57.156 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : <==      Total: 11
+2022-09-06 10:59:57.157 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName_COUNT   : ==>  Preparing: SELECT count(0) FROM mybatis.user AS a
+2022-09-06 10:59:57.157 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName_COUNT   : ==> Parameters: 
+2022-09-06 10:59:57.159 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName_COUNT   : <==      Total: 1
+2022-09-06 10:59:57.160 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a LIMIT ?
+2022-09-06 10:59:57.160 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 3(Integer)
+2022-09-06 10:59:57.161 DEBUG 10336 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : <==      Total: 3
+2022-09-06 11:36:59.369  WARN 10336 --- [Thread-22] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2022-09-06 11:36:59.369  WARN 10336 --- [Thread-25] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2022-09-06 11:36:59.369  WARN 10336 --- [Thread-22] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2022-09-06 11:36:59.370  WARN 10336 --- [Thread-25] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2022-09-06 11:36:59.636  INFO 10336 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 11:36:59.644  INFO 10336 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-09-06 11:36:59.648  INFO 10336 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-09-06 11:36:59.992  INFO 10336 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 11:37:00.000  INFO 10336 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-09-06 11:37:00.003  INFO 10336 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-09-06 11:37:07.742  INFO 16588 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : The following profiles are active: dev
+2022-09-06 11:37:08.380  INFO 16588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-09-06 11:37:08.382  INFO 16588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-06 11:37:08.404  INFO 16588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2022-09-06 11:37:08.568  INFO 16588 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b40d4ccc-e716-3892-860e-08fb2b3337e6
+2022-09-06 11:37:08.711  INFO 16588 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.example.springbootmybatis.config.RedisConfig$$EnhancerBySpringCGLIB$$716ee002] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 11:37:09.068  INFO 16588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
+2022-09-06 11:37:09.075  INFO 16588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 11:37:09.075  INFO 16588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-09-06 11:37:09.226  INFO 16588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 11:37:09.226  INFO 16588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1473 ms
+2022-09-06 11:37:10.045  INFO 16588 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-06 11:37:10.063  WARN 16588 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 11:37:10.064  INFO 16588 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 11:37:10.066  WARN 16588 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 11:37:10.067  INFO 16588 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 11:37:10.152  INFO 16588 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-06 11:37:10.189  INFO 16588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 11:37:10.221  INFO 16588 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-09-06 11:37:10.719  INFO 16588 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 11:37:11.416  INFO 16588 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2022-09-06 11:37:11.417  INFO 16588 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2022-09-06 11:37:13.321  INFO 16588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8020 (http) with context path ''
+2022-09-06 11:37:13.330  INFO 16588 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.159.1:8020 register finished
+2022-09-06 11:37:13.779  INFO 16588 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-06 11:37:13.788  INFO 16588 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-09-06 11:37:13.817  INFO 16588 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 11:37:13.885  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_1
+2022-09-06 11:37:14.007  INFO 16588 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 11:37:14.010  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: authUrlUsingGET_1
+2022-09-06 11:37:14.012  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_2
+2022-09-06 11:37:14.016  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_3
+2022-09-06 11:37:14.018  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rawAuthMenuUsingGET_1
+2022-09-06 11:37:14.020  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPubKeyUsingGET_1
+2022-09-06 11:37:14.021  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logOutUsingGET_1
+2022-09-06 11:37:14.025  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAuthUsingPOST_1
+2022-09-06 11:37:14.028  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addPermissionUsingPOST_1
+2022-09-06 11:37:14.030  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletePermissionByIdUsingPOST_1
+2022-09-06 11:37:14.033  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listPermissionUsingGET_1
+2022-09-06 11:37:14.036  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryPermissionByIdUsingGET_1
+2022-09-06 11:37:14.037  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: treePermissionUsingGET_1
+2022-09-06 11:37:14.039  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updatePermissionUsingPOST_1
+2022-09-06 11:37:14.042  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addRoleUsingPOST_1
+2022-09-06 11:37:14.044  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRoleByIdUsingGET_1
+2022-09-06 11:37:14.046  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listRoleUsingGET_1
+2022-09-06 11:37:14.048  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryRoleByIdUsingGET_1
+2022-09-06 11:37:14.050  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRoleUsingPOST_1
+2022-09-06 11:37:14.054  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-09-06 11:37:14.055  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2022-09-06 11:37:14.057  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUserByIdUsingGET_1
+2022-09-06 11:37:14.062  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2022-09-06 11:37:14.064  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserUsingGET_1
+2022-09-06 11:37:14.066  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: permissionUsingGET_1
+2022-09-06 11:37:14.068  INFO 16588 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2022-09-06 11:37:14.076  INFO 16588 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : Started SpringbootMybatisApplication in 7.871 seconds (JVM running for 8.738)
+2022-09-06 11:37:19.782  INFO 16588 --- [http-nio-8020-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 11:37:19.783  INFO 16588 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 11:37:19.790  INFO 16588 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-09-06 11:37:19.935  INFO 16588 --- [http-nio-8020-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-06 11:37:20.418 DEBUG 16588 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 11:37:20.433 DEBUG 16588 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 1(Integer)
+2022-09-06 11:37:20.452 DEBUG 16588 --- [http-nio-8020-exec-1] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 4
+2022-09-06 11:37:21.413 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 11:37:21.413 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 1(Integer)
+2022-09-06 11:37:21.418 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.authUrl                : <==      Total: 12
+2022-09-06 11:37:21.440 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.RoleDao.queryRoleByName        : ==>  Preparing: select * from mybatis.role as a where a.name=?;
+2022-09-06 11:37:21.440 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.RoleDao.queryRoleByName        : ==> Parameters: 超级管理员(String)
+2022-09-06 11:37:21.442 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.RoleDao.queryRoleByName        : <==      Total: 1
+2022-09-06 11:37:21.456 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a
+2022-09-06 11:37:21.456 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 
+2022-09-06 11:37:21.460 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName         : <==      Total: 11
+2022-09-06 11:37:21.493 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName_COUNT   : ==>  Preparing: SELECT count(0) FROM mybatis.user AS a
+2022-09-06 11:37:21.494 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName_COUNT   : ==> Parameters: 
+2022-09-06 11:37:21.497 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName_COUNT   : <==      Total: 1
+2022-09-06 11:37:21.500 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a LIMIT ?
+2022-09-06 11:37:21.500 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 3(Integer)
+2022-09-06 11:37:21.502 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.listUserByName         : <==      Total: 3
+2022-09-06 11:37:25.917 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 11:37:25.917 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 1(Integer)
+2022-09-06 11:37:25.919 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : <==      Total: 12
+2022-09-06 11:37:25.927 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.RoleDao.queryRoleByName        : ==>  Preparing: select * from mybatis.role as a where a.name=?;
+2022-09-06 11:37:25.927 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.RoleDao.queryRoleByName        : ==> Parameters: 超级管理员(String)
+2022-09-06 11:37:25.928 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.RoleDao.queryRoleByName        : <==      Total: 1
+2022-09-06 11:37:25.929 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a
+2022-09-06 11:37:25.929 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 
+2022-09-06 11:37:25.933 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : <==      Total: 11
+2022-09-06 11:37:25.934 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName_COUNT   : ==>  Preparing: SELECT count(0) FROM mybatis.user AS a
+2022-09-06 11:37:25.934 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName_COUNT   : ==> Parameters: 
+2022-09-06 11:37:25.936 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName_COUNT   : <==      Total: 1
+2022-09-06 11:37:25.937 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a LIMIT ?, ?
+2022-09-06 11:37:25.938 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 3(Long), 3(Integer)
+2022-09-06 11:37:25.938 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.listUserByName         : <==      Total: 3
+2022-09-06 11:37:27.732 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 11:37:27.732 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 1(Integer)
+2022-09-06 11:37:27.734 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.AuthDao.authUrl                : <==      Total: 12
+2022-09-06 11:37:27.743 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.RoleDao.queryRoleByName        : ==>  Preparing: select * from mybatis.role as a where a.name=?;
+2022-09-06 11:37:27.743 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.RoleDao.queryRoleByName        : ==> Parameters: 超级管理员(String)
+2022-09-06 11:37:27.744 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.RoleDao.queryRoleByName        : <==      Total: 1
+2022-09-06 11:37:27.745 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a
+2022-09-06 11:37:27.746 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 
+2022-09-06 11:37:27.748 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName         : <==      Total: 11
+2022-09-06 11:37:27.749 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName_COUNT   : ==>  Preparing: SELECT count(0) FROM mybatis.user AS a
+2022-09-06 11:37:27.749 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName_COUNT   : ==> Parameters: 
+2022-09-06 11:37:27.751 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName_COUNT   : <==      Total: 1
+2022-09-06 11:37:27.752 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName         : ==>  Preparing: select * from mybatis.user as a LIMIT ?
+2022-09-06 11:37:27.752 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName         : ==> Parameters: 3(Integer)
+2022-09-06 11:37:27.754 DEBUG 16588 --- [http-nio-8020-exec-5] c.e.s.dao.UserDao.listUserByName         : <==      Total: 3
+2022-09-06 11:39:06.715  WARN 16588 --- [http-nio-8020-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 98954
+2022-09-06 11:39:06.728 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 11:39:06.729 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 3(Integer)
+2022-09-06 11:39:06.733 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 11:39:06.757 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.getRole                : ==>  Preparing: select b.* from mybatis.user_role a join mybatis.role b on a.roleId = b.id where a.userId = ?
+2022-09-06 11:39:06.757 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.getRole                : ==> Parameters: 3(Integer)
+2022-09-06 11:39:06.758 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.getRole                : <==      Total: 1
+2022-09-06 11:39:59.395 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 11:39:59.396 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 3(Integer)
+2022-09-06 11:39:59.398 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.authUrl                : <==      Total: 6
+2022-09-06 11:39:59.398 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.service.ServiceAspect              : 用户id获取,argNames[i]=id
+2022-09-06 11:39:59.398 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.service.ServiceAspect              : 校验用户授权信息:id=3,resource=user
+2022-09-06 11:39:59.405 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.d.D.getAuthorizedData              : ==>  Preparing: select u.id from mybatis.data_permission as dataPerm join mybatis.user as u on dataPerm.resourceId = u.departmentId where dataPerm.userId = ? and u.id = ?
+2022-09-06 11:39:59.405 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.d.D.getAuthorizedData              : ==> Parameters: 3(Integer), 3(Integer)
+2022-09-06 11:39:59.413 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.d.D.getAuthorizedData              : <==      Total: 1
+2022-09-06 11:39:59.414 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.service.ServiceAspect              : 用户授权校验通过:id=3,resource=user
+2022-09-06 11:39:59.414 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 11:39:59.414 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 3(Integer)
+2022-09-06 11:39:59.416 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 11:40:09.561 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 11:40:09.561 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 3(Integer)
+2022-09-06 11:40:09.563 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.authUrl                : <==      Total: 6
+2022-09-06 11:40:09.563 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.service.ServiceAspect              : 用户id获取,argNames[i]=id
+2022-09-06 11:40:09.563 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.service.ServiceAspect              : 校验用户授权信息:id=9,resource=user
+2022-09-06 11:40:09.569 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.d.D.getAuthorizedData              : ==>  Preparing: select u.id from mybatis.data_permission as dataPerm join mybatis.user as u on dataPerm.resourceId = u.departmentId where dataPerm.userId = ? and u.id = ?
+2022-09-06 11:40:09.570 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.d.D.getAuthorizedData              : ==> Parameters: 3(Integer), 9(Integer)
+2022-09-06 11:40:09.570 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.d.D.getAuthorizedData              : <==      Total: 1
+2022-09-06 11:40:09.571 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.service.ServiceAspect              : 用户授权校验通过:id=9,resource=user
+2022-09-06 11:40:09.571 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 11:40:09.571 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 9(Integer)
+2022-09-06 11:40:09.572 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 11:43:16.361  WARN 16588 --- [http-nio-8020-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 186788
+2022-09-06 11:43:16.372 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 11:43:16.373 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 3(Integer)
+2022-09-06 11:43:16.376 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.authUrl                : <==      Total: 6
+2022-09-06 11:43:16.376 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.service.ServiceAspect              : 用户id获取,argNames[i]=id
+2022-09-06 11:43:16.376 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.service.ServiceAspect              : 校验用户授权信息:id=25,resource=user
+2022-09-06 11:43:16.380 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.d.D.getAuthorizedData              : ==>  Preparing: select u.id from mybatis.data_permission as dataPerm join mybatis.user as u on dataPerm.resourceId = u.departmentId where dataPerm.userId = ? and u.id = ?
+2022-09-06 11:43:16.380 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.d.D.getAuthorizedData              : ==> Parameters: 3(Integer), 25(Integer)
+2022-09-06 11:43:16.381 DEBUG 16588 --- [http-nio-8020-exec-7] c.e.s.d.D.getAuthorizedData              : <==      Total: 0
+2022-09-06 11:43:23.691 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 11:43:23.691 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 3(Integer)
+2022-09-06 11:43:23.693 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.authUrl                : <==      Total: 6
+2022-09-06 11:43:23.693 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.service.ServiceAspect              : 用户id获取,argNames[i]=id
+2022-09-06 11:43:23.693 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.service.ServiceAspect              : 校验用户授权信息:id=1,resource=user
+2022-09-06 11:43:23.698 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.d.D.getAuthorizedData              : ==>  Preparing: select u.id from mybatis.data_permission as dataPerm join mybatis.user as u on dataPerm.resourceId = u.departmentId where dataPerm.userId = ? and u.id = ?
+2022-09-06 11:43:23.698 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.d.D.getAuthorizedData              : ==> Parameters: 3(Integer), 1(Integer)
+2022-09-06 11:43:23.699 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.d.D.getAuthorizedData              : <==      Total: 0
+2022-09-06 11:43:28.407 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 11:43:28.408 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 3(Integer)
+2022-09-06 11:43:28.409 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.dao.AuthDao.authUrl                : <==      Total: 6
+2022-09-06 11:43:28.410 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.service.ServiceAspect              : 用户id获取,argNames[i]=id
+2022-09-06 11:43:28.410 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.service.ServiceAspect              : 校验用户授权信息:id=2,resource=user
+2022-09-06 11:43:28.416 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.d.D.getAuthorizedData              : ==>  Preparing: select u.id from mybatis.data_permission as dataPerm join mybatis.user as u on dataPerm.resourceId = u.departmentId where dataPerm.userId = ? and u.id = ?
+2022-09-06 11:43:28.416 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.d.D.getAuthorizedData              : ==> Parameters: 3(Integer), 2(Integer)
+2022-09-06 11:43:28.417 DEBUG 16588 --- [http-nio-8020-exec-9] c.e.s.d.D.getAuthorizedData              : <==      Total: 0
+2022-09-06 11:43:31.838 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 11:43:31.839 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 3(Integer)
+2022-09-06 11:43:31.840 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.authUrl                : <==      Total: 6
+2022-09-06 11:43:31.841 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.service.ServiceAspect              : 用户id获取,argNames[i]=id
+2022-09-06 11:43:31.841 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.service.ServiceAspect              : 校验用户授权信息:id=3,resource=user
+2022-09-06 11:43:31.845 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.d.D.getAuthorizedData              : ==>  Preparing: select u.id from mybatis.data_permission as dataPerm join mybatis.user as u on dataPerm.resourceId = u.departmentId where dataPerm.userId = ? and u.id = ?
+2022-09-06 11:43:31.845 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.d.D.getAuthorizedData              : ==> Parameters: 3(Integer), 3(Integer)
+2022-09-06 11:43:31.846 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.d.D.getAuthorizedData              : <==      Total: 1
+2022-09-06 11:43:31.847 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.service.ServiceAspect              : 用户授权校验通过:id=3,resource=user
+2022-09-06 11:43:31.847 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 11:43:31.847 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 3(Integer)
+2022-09-06 11:43:31.848 DEBUG 16588 --- [http-nio-8020-exec-8] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 14:32:13.496 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =null)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:32:13.497 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 3(Integer)
+2022-09-06 14:32:13.501 DEBUG 16588 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 0
+2022-09-06 14:32:22.162 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =null)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:32:22.162 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 3(Integer)
+2022-09-06 14:32:22.163 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 0
+2022-09-06 14:33:37.262  WARN 16588 --- [http-nio-8020-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 75099
+2022-09-06 14:33:37.282 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =null)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:33:37.282 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 3(Integer)
+2022-09-06 14:33:37.285 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 0
+2022-09-06 14:40:11.876  WARN 16588 --- [http-nio-8020-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 394590
+2022-09-06 14:40:11.888 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 14:40:11.888 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 1(Integer)
+2022-09-06 14:40:11.890 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 14:40:11.895 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.getRole                : ==>  Preparing: select b.* from mybatis.user_role a join mybatis.role b on a.roleId = b.id where a.userId = ?
+2022-09-06 14:40:11.896 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.getRole                : ==> Parameters: 1(Integer)
+2022-09-06 14:40:11.898 DEBUG 16588 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.getRole                : <==      Total: 1
+2022-09-06 14:40:23.024 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 14:40:23.024 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 3(Integer)
+2022-09-06 14:40:23.026 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 14:40:23.033 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.getRole                : ==>  Preparing: select b.* from mybatis.user_role a join mybatis.role b on a.roleId = b.id where a.userId = ?
+2022-09-06 14:40:23.033 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.getRole                : ==> Parameters: 3(Integer)
+2022-09-06 14:40:23.034 DEBUG 16588 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.getRole                : <==      Total: 1
+2022-09-06 14:40:39.691 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.authUrl                : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id) d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 14:40:39.691 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.authUrl                : ==> Parameters: 3(Integer)
+2022-09-06 14:40:39.693 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.AuthDao.authUrl                : <==      Total: 6
+2022-09-06 14:40:39.694 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.service.ServiceAspect              : 用户id获取,argNames[i]=id
+2022-09-06 14:40:39.694 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.service.ServiceAspect              : 校验用户授权信息:id=3,resource=user
+2022-09-06 14:40:39.696 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.service.ServiceAspect              : 用户授权校验通过:id=3,resource=user
+2022-09-06 14:40:39.696 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 14:40:39.696 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 3(Integer)
+2022-09-06 14:40:39.697 DEBUG 16588 --- [http-nio-8020-exec-6] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 14:41:33.326 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from mybatis.user g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?;
+2022-09-06 14:41:33.326 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 1(Integer)
+2022-09-06 14:41:33.328 DEBUG 16588 --- [http-nio-8020-exec-10] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 4
+2022-09-06 14:45:04.967  WARN 16588 --- [Thread-22] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2022-09-06 14:45:04.967  WARN 16588 --- [Thread-25] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2022-09-06 14:45:04.967  WARN 16588 --- [Thread-22] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2022-09-06 14:45:04.967  WARN 16588 --- [Thread-25] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2022-09-06 14:45:05.207  INFO 16588 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 14:45:05.211  INFO 16588 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-09-06 14:45:05.213  INFO 16588 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-09-06 14:45:05.553  INFO 16588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 14:45:05.557  INFO 16588 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-09-06 14:45:05.559  INFO 16588 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-09-06 14:45:11.947  INFO 16712 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : The following profiles are active: dev
+2022-09-06 14:45:12.548  INFO 16712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-09-06 14:45:12.550  INFO 16712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-06 14:45:12.575  INFO 16712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-09-06 14:45:12.729  INFO 16712 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b40d4ccc-e716-3892-860e-08fb2b3337e6
+2022-09-06 14:45:12.876  INFO 16712 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.example.springbootmybatis.config.RedisConfig$$EnhancerBySpringCGLIB$$9a4fadc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 14:45:13.241  INFO 16712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
+2022-09-06 14:45:13.248  INFO 16712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 14:45:13.249  INFO 16712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-09-06 14:45:13.394  INFO 16712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 14:45:13.394  INFO 16712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1436 ms
+2022-09-06 14:45:14.187  INFO 16712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-06 14:45:14.204  WARN 16712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 14:45:14.205  INFO 16712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 14:45:14.207  WARN 16712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 14:45:14.208  INFO 16712 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 14:45:14.301  INFO 16712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-06 14:45:14.335  INFO 16712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 14:45:14.365  INFO 16712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-09-06 14:45:14.883  INFO 16712 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 14:45:15.578  INFO 16712 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2022-09-06 14:45:15.578  INFO 16712 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2022-09-06 14:45:17.436  INFO 16712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8020 (http) with context path ''
+2022-09-06 14:45:17.444  INFO 16712 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.159.1:8020 register finished
+2022-09-06 14:45:17.895  INFO 16712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-06 14:45:17.903  INFO 16712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-09-06 14:45:17.930  INFO 16712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 14:45:17.999  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_1
+2022-09-06 14:45:18.119  INFO 16712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 14:45:18.122  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: authUrlUsingGET_1
+2022-09-06 14:45:18.125  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_2
+2022-09-06 14:45:18.127  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_3
+2022-09-06 14:45:18.129  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rawAuthMenuUsingGET_1
+2022-09-06 14:45:18.130  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPubKeyUsingGET_1
+2022-09-06 14:45:18.131  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logOutUsingGET_1
+2022-09-06 14:45:18.134  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAuthUsingPOST_1
+2022-09-06 14:45:18.140  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addPermissionUsingPOST_1
+2022-09-06 14:45:18.142  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletePermissionByIdUsingPOST_1
+2022-09-06 14:45:18.144  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listPermissionUsingGET_1
+2022-09-06 14:45:18.146  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryPermissionByIdUsingGET_1
+2022-09-06 14:45:18.147  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: treePermissionUsingGET_1
+2022-09-06 14:45:18.148  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updatePermissionUsingPOST_1
+2022-09-06 14:45:18.151  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addRoleUsingPOST_1
+2022-09-06 14:45:18.152  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRoleByIdUsingGET_1
+2022-09-06 14:45:18.155  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listRoleUsingGET_1
+2022-09-06 14:45:18.156  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryRoleByIdUsingGET_1
+2022-09-06 14:45:18.158  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRoleUsingPOST_1
+2022-09-06 14:45:18.160  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-09-06 14:45:18.162  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2022-09-06 14:45:18.164  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUserByIdUsingGET_1
+2022-09-06 14:45:18.170  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2022-09-06 14:45:18.171  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserUsingGET_1
+2022-09-06 14:45:18.173  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: permissionUsingGET_1
+2022-09-06 14:45:18.175  INFO 16712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2022-09-06 14:45:18.183  INFO 16712 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : Started SpringbootMybatisApplication in 7.765 seconds (JVM running for 8.661)
+2022-09-06 14:45:34.459  INFO 16712 --- [http-nio-8020-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 14:45:34.459  INFO 16712 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 14:45:34.465  INFO 16712 --- [http-nio-8020-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-09-06 14:45:41.870  INFO 16712 --- [http-nio-8020-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-06 14:45:42.019 DEBUG 16712 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.queryUserById          : ==>  Preparing: select * from mybatis.user as a where a.id=?;
+2022-09-06 14:45:42.038 DEBUG 16712 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.queryUserById          : ==> Parameters: 3(Integer)
+2022-09-06 14:45:42.057 DEBUG 16712 --- [http-nio-8020-exec-3] c.e.s.dao.UserDao.queryUserById          : <==      Total: 1
+2022-09-06 14:45:42.281 DEBUG 16712 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.getRole                : ==>  Preparing: select b.* from mybatis.user_role a join mybatis.role b on a.roleId = b.id where a.userId = ?
+2022-09-06 14:45:42.281 DEBUG 16712 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.getRole                : ==> Parameters: 3(Integer)
+2022-09-06 14:45:42.282 DEBUG 16712 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.getRole                : <==      Total: 1
+2022-09-06 14:46:00.030 DEBUG 16712 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:46:00.030 DEBUG 16712 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 1(Integer)
+2022-09-06 14:46:00.032 DEBUG 16712 --- [http-nio-8020-exec-8] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 0
+2022-09-06 14:46:47.160 DEBUG 16712 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:46:47.161 DEBUG 16712 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 3(Integer)
+2022-09-06 14:46:47.163 DEBUG 16712 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 2
+2022-09-06 14:53:27.002  WARN 16712 --- [Thread-24] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2022-09-06 14:53:27.002  WARN 16712 --- [Thread-21] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2022-09-06 14:53:27.002  WARN 16712 --- [Thread-21] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2022-09-06 14:53:27.003  WARN 16712 --- [Thread-24] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2022-09-06 14:53:27.248  INFO 16712 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 14:53:27.255  INFO 16712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-09-06 14:53:27.257  INFO 16712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-09-06 14:53:27.623  INFO 16712 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 14:53:27.631  INFO 16712 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-09-06 14:53:27.636  INFO 16712 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-09-06 14:53:33.725  INFO 18192 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : The following profiles are active: dev
+2022-09-06 14:53:34.338  INFO 18192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-09-06 14:53:34.341  INFO 18192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-06 14:53:34.366  INFO 18192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2022-09-06 14:53:34.523  INFO 18192 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b40d4ccc-e716-3892-860e-08fb2b3337e6
+2022-09-06 14:53:34.669  INFO 18192 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.example.springbootmybatis.config.RedisConfig$$EnhancerBySpringCGLIB$$768bb72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-06 14:53:35.037  INFO 18192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8020 (http)
+2022-09-06 14:53:35.043  INFO 18192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-06 14:53:35.044  INFO 18192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-09-06 14:53:35.189  INFO 18192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-06 14:53:35.190  INFO 18192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1453 ms
+2022-09-06 14:53:35.992  INFO 18192 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-06 14:53:36.011  WARN 18192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 14:53:36.011  INFO 18192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 14:53:36.013  WARN 18192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-09-06 14:53:36.013  INFO 18192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-09-06 14:53:36.098  INFO 18192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-06 14:53:36.136  INFO 18192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-06 14:53:36.168  INFO 18192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-09-06 14:53:36.674  INFO 18192 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 14:53:37.374  INFO 18192 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2022-09-06 14:53:37.375  INFO 18192 --- [restartedMain] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2022-09-06 14:53:39.239  INFO 18192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8020 (http) with context path ''
+2022-09-06 14:53:39.247  INFO 18192 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.159.1:8020 register finished
+2022-09-06 14:53:39.683  INFO 18192 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-06 14:53:39.692  INFO 18192 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-09-06 14:53:39.720  INFO 18192 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 14:53:39.790  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_1
+2022-09-06 14:53:39.909  INFO 18192 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-06 14:53:39.911  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: authUrlUsingGET_1
+2022-09-06 14:53:39.914  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_2
+2022-09-06 14:53:39.916  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listAuthMenuUsingGET_3
+2022-09-06 14:53:39.918  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: rawAuthMenuUsingGET_1
+2022-09-06 14:53:39.919  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPubKeyUsingGET_1
+2022-09-06 14:53:39.920  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logOutUsingGET_1
+2022-09-06 14:53:39.923  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loginAuthUsingPOST_1
+2022-09-06 14:53:39.926  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addPermissionUsingPOST_1
+2022-09-06 14:53:39.928  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletePermissionByIdUsingPOST_1
+2022-09-06 14:53:39.930  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listPermissionUsingGET_1
+2022-09-06 14:53:39.932  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryPermissionByIdUsingGET_1
+2022-09-06 14:53:39.933  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: treePermissionUsingGET_1
+2022-09-06 14:53:39.934  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updatePermissionUsingPOST_1
+2022-09-06 14:53:39.937  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addRoleUsingPOST_1
+2022-09-06 14:53:39.938  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteRoleByIdUsingGET_1
+2022-09-06 14:53:39.940  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listRoleUsingGET_1
+2022-09-06 14:53:39.942  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryRoleByIdUsingGET_1
+2022-09-06 14:53:39.943  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateRoleUsingPOST_1
+2022-09-06 14:53:39.945  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2022-09-06 14:53:39.947  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2022-09-06 14:53:39.949  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUserByIdUsingGET_1
+2022-09-06 14:53:39.954  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2022-09-06 14:53:39.956  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUserUsingGET_1
+2022-09-06 14:53:39.957  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: permissionUsingGET_1
+2022-09-06 14:53:39.959  INFO 18192 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2022-09-06 14:53:39.967  INFO 18192 --- [restartedMain] c.e.s.SpringbootMybatisApplication       : Started SpringbootMybatisApplication in 7.785 seconds (JVM running for 8.686)
+2022-09-06 14:53:49.606  INFO 18192 --- [http-nio-8020-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-06 14:53:49.606  INFO 18192 --- [http-nio-8020-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-06 14:53:49.613  INFO 18192 --- [http-nio-8020-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-09-06 14:53:49.744  INFO 18192 --- [http-nio-8020-exec-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-06 14:53:50.189 DEBUG 18192 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:53:50.206 DEBUG 18192 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 3(Integer)
+2022-09-06 14:53:50.224 DEBUG 18192 --- [http-nio-8020-exec-3] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 2
+2022-09-06 14:53:54.228 DEBUG 18192 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:53:54.228 DEBUG 18192 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 1(Integer)
+2022-09-06 14:53:54.229 DEBUG 18192 --- [http-nio-8020-exec-2] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 0
+2022-09-06 14:54:01.936 DEBUG 18192 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 14:54:01.937 DEBUG 18192 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 3(Integer)
+2022-09-06 14:54:01.940 DEBUG 18192 --- [http-nio-8020-exec-4] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 2
+2022-09-06 15:24:30.185  WARN 18192 --- [http-nio-8020-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 1828235
+2022-09-06 15:24:30.201 DEBUG 18192 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.rawUserMenu            : ==>  Preparing: select g.name userName, h.* from (select * from mybatis.user WHERE createBy =3)g left join( select e.userID, f.* from mybatis.user_role e join( select c.name roleName, d.* from mybatis.role c join( select roleID, permissionID, permission, pid, url from mybatis.role_permission a join mybatis.permission b on a.permissionID = b.id where b.type = "菜单") d on c.id = d.roleID) f on e.roleID = f.roleID) h on g.id = h.userID where userID = ?
+2022-09-06 15:24:30.202 DEBUG 18192 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.rawUserMenu            : ==> Parameters: 3(Integer)
+2022-09-06 15:24:30.205 DEBUG 18192 --- [http-nio-8020-exec-7] c.e.s.dao.AuthDao.rawUserMenu            : <==      Total: 2
+2022-09-06 18:06:18.116  WARN 18192 --- [Thread-21] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2022-09-06 18:06:18.116  WARN 18192 --- [Thread-24] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2022-09-06 18:06:18.118  WARN 18192 --- [Thread-21] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2022-09-06 18:06:18.119  WARN 18192 --- [Thread-24] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2022-09-06 18:06:18.432  INFO 18192 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-09-06 18:06:18.448  INFO 18192 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-09-06 18:06:18.452  INFO 18192 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-09-06 18:06:19.009  INFO 18192 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-06 18:06:19.050  INFO 18192 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-09-06 18:06:19.052  INFO 18192 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootmybatis.dao.PermissionDao">
+    <select id="listPermission" resultType="com.example.springbootmybatis.pojo.Permission">
+        select *
+        from mybatis.permission as a;
+    </select>
+
+    <select id="queryPermissionById" parameterType="int" resultType="com.example.springbootmybatis.pojo.Permission">
+        select *
+        from mybatis.permission as a
+        where a.id=#{id};
+    </select>
+
+    <delete id="deletePermissionById" parameterType="int">
+        delete from mybatis.permission
+        where id=#{id};
+    </delete>
+
+    <update id="updatePermission" parameterType="com.example.springbootmybatis.pojo.Permission">
+        update mybatis.permission
+        set pid=#{pid},permission=#{permission},type=#{type},
+            url=#{url},description=#{description}
+        where id=#{id};
+    </update>
+
+    <insert id="addPermission" parameterType="com.example.springbootmybatis.pojo.Permission">
+        insert into mybatis.permission(id,pid,permission,type,url,description)
+        values(#{id},#{pid},#{permission},#{type},#{url},#{description})
+    </insert>
+</mapper>

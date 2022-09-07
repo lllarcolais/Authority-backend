@@ -4,25 +4,44 @@
 <mapper namespace="com.example.springbootmybatis.dao.UserDao">
     <select id="listUser" resultType="com.example.springbootmybatis.pojo.User">
         select *
-        from mybatis.user;
+        from mybatis.user as a;
     </select>
 
     <select id="listUserByName" parameterType="com.example.springbootmybatis.pojo.query.UserQuery" resultType="com.example.springbootmybatis.pojo.User">
         select *
-        from mybatis.user
+        from mybatis.user as a
         <where>
             <if test="name != null and name != ''">
-                and name like concat('%',#{name},'%')
+                and a.name like concat('%',#{name},'%')
             </if>
         </where>
     </select>
 
+    <select id="listUserByIdSet" resultType="com.example.springbootmybatis.pojo.User">
+        select * from mybatis.user
+        where 
+        <choose>
+            <when test="set != null and set.size()>0">
+                id in
+                <foreach item="idSet" index="index" collection="set" open="(" separator="," close=")">
+                    #{idSet, jdbcType=INTEGER}
+                </foreach>
+            </when>
+            <otherwise>
+                0 = 1
+            </otherwise>
+        </choose>
+        <if test="userQuery.name != null and userQuery.name != ''">
+            and name like concat('%',#{userQuery.name, jdbcType=VARCHAR},'%')
+        </if>
+    </select>
+
     <select id="queryUserByName" parameterType="com.example.springbootmybatis.pojo.User" resultType="com.example.springbootmybatis.pojo.User">
         select *
-        from mybatis.user
+        from mybatis.user as a
         <where>
             <if test="name != null and name != ''">
-                and name = #{name};
+                and a.name = #{name};
             </if>
         </where>
     </select>
@@ -33,19 +52,19 @@
 
     <select id="queryUserById" parameterType="int" resultType="com.example.springbootmybatis.pojo.User">
         select *
-        from mybatis.user
-        where id=#{id};
+        from mybatis.user as a
+        where a.id=#{id};
     </select>
 
     <update id="updateUser" parameterType="com.example.springbootmybatis.pojo.User">
         update mybatis.user
-        set name=#{name}, pwd=#{pwd}
+        set name=#{name}, pwd=#{pwd}, salt=#{salt}, lastmodifiedTime=#{lastmodifiedTime}, lastmodifiedBy=#{lastmodifiedBy}
         where id=#{id};
 
     </update>
 
     <insert id="addUser" parameterType="com.example.springbootmybatis.pojo.User">
-        insert into mybatis.user(name,pwd)
-        values(#{name},#{pwd});
+        insert into mybatis.user(name,pwd,salt,createTime,createBy)
+        values(#{name},#{pwd},#{salt},#{createTime},#{createBy});
     </insert>
 </mapper>

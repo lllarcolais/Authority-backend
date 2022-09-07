@@ -13,11 +13,13 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Resource
     TokenAuthInterceptor tokenAuthInterceptor;
 
+
     @Override
     public void addInterceptors(InterceptorRegistry registry){
         registry.addInterceptor(tokenAuthInterceptor)
                 .addPathPatterns("/**");
 //                .excludePathPatterns("/home");
+
     }
 
 

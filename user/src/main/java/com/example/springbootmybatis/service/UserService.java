@@ -1,5 +1,6 @@
 package com.example.springbootmybatis.service;
 
+import com.example.springbootmybatis.pojo.JsonRespBo;
 import com.example.springbootmybatis.pojo.User;
 import com.example.springbootmybatis.pojo.query.UserQuery;
 import com.github.pagehelper.PageInfo;
@@ -20,7 +21,7 @@ public interface UserService {
     public boolean deleteUserById(Integer id);
 
     //根据id查询用户
-    public User queryUserById(Integer id);
+    public JsonRespBo queryUserById(Integer id);
 
     //修改用户
     public boolean updateUser(User user);
