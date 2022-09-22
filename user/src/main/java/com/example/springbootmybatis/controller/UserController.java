@@ -1,6 +1,7 @@
 package com.example.springbootmybatis.controller;
 
 import com.example.springbootmybatis.annotation.Login;
+import com.example.springbootmybatis.pojo.AssignRoleBo;
 import com.example.springbootmybatis.pojo.JsonRespBo;
 import com.example.springbootmybatis.pojo.User;
 import com.example.springbootmybatis.pojo.query.UserQuery;
@@ -73,9 +74,19 @@ public class UserController {
 
     }
 
+    @GetMapping("/role/{id}")
+    @CrossOrigin
+    @Login
+    public JsonRespBo findRoleByUserId(@PathVariable("id") Integer id){
+        JsonRespBo respBo = userService.queryRoleByUserId(id);
+        return respBo;
+
+    }
+
     @ApiOperation("根据用户id删除用户")
     @DeleteMapping("/delete/{id}")
     @CrossOrigin
+    @Login
     public boolean delete(@PathVariable("id") Integer id, RedirectAttributes redirectAttributes, HttpServletResponse response){
         return userService.deleteUserById(id);
     }
@@ -83,17 +94,23 @@ public class UserController {
     @ApiOperation("编辑用户")
     @PutMapping("/update")
     @CrossOrigin
+    @Login
     public boolean update(@RequestBody User user, HttpServletRequest request){
-        System.out.println("user:"+user);
         return userService.updateUser(user);
     }
 
     @ApiOperation("新增用户")
     @PostMapping("/add")
     @CrossOrigin
+    @Login
     public boolean add(@RequestBody User user, HttpServletRequest request){
         return userService.addUser(user);
     }
 
-
+    @PostMapping("/assignRole")
+    @CrossOrigin
+    @Login
+    public JsonRespBo assignRole(@RequestBody AssignRoleBo assignRoleBo) {
+        return userService.assignRole(assignRoleBo);
+    }
 }

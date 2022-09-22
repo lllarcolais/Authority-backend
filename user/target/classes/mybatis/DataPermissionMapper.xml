@@ -14,11 +14,6 @@
         </where>
     </select>
 
-    <select id="queryUserDepartment" resultType="int" parameterType="int">
-        select departmentId from mybatis.user
-        where id = #{userId};
-    </select>
-
     <select id="getCreateByMyselfData" resultType="int">
         select id from
         <if test="resource == 'user'">
@@ -37,6 +32,9 @@
         select u.id from mybatis.data_permission as dataPerm join
             <if test="resource == 'user'">
                 mybatis.user as u on dataPerm.resourceId = u.departmentId
+            </if>
+            <if test="resource == 'role'">
+                mybatis.role as u on dataPerm.resourceValue = u.name
             </if>
             where dataPerm.userId = #{userId}
             <if test="id != null and id != ''">

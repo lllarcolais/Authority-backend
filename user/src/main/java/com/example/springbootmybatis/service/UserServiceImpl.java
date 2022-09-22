@@ -1,8 +1,11 @@
 package com.example.springbootmybatis.service;
 
+import com.example.springbootmybatis.dao.RoleDao;
 import com.example.springbootmybatis.dao.UserDao;
+import com.example.springbootmybatis.pojo.AssignRoleBo;
 import com.example.springbootmybatis.pojo.JsonRespBo;
 import com.example.springbootmybatis.pojo.User;
+import com.example.springbootmybatis.pojo.User_Role;
 import com.example.springbootmybatis.pojo.query.UserQuery;
 import com.example.springbootmybatis.util.DBEncryptUtil;
 import com.github.pagehelper.PageHelper;
@@ -21,6 +24,9 @@ public class UserServiceImpl implements UserService{
 
     @Autowired
     private UserDao userDao;
+
+    @Autowired
+    private RoleDao roleDao;
 
     @Autowired
     private DataPermission dataPermission;
@@ -84,11 +90,16 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
+    public JsonRespBo queryRoleByUserId(Integer id) {
+        return null;
+    }
+
+    @Override
     public boolean updateUser(User user) {
-        String salt = DBEncryptUtil.getRandomSalt();
-        String saltPwd = DBEncryptUtil.generate(user.getPwd(),salt);
-        user.setSalt(salt);
-        user.setPwd(saltPwd);
+//        String salt = DBEncryptUtil.getRandomSalt();
+//        String saltPwd = DBEncryptUtil.generate(user.getPwd(),salt);
+//        user.setSalt(salt);
+//        user.setPwd(saltPwd);
         user.setLastmodifiedTime();
         user.setLastmodifiedBy();
         int i = userDao.updateUser(user);
@@ -116,5 +127,34 @@ public class UserServiceImpl implements UserService{
         }
         // return userDao.addUser(user)>0 ? true : false;
     }
+
+    @Override
+    public JsonRespBo assignRole(AssignRoleBo assignRoleBo) {
+        JsonRespBo jsonRespBo = new JsonRespBo();
+        try {
+            Integer userId = assignRoleBo.getUserId();
+            List<String> currentRoles = (List<String>) assignRoleBo.getCurrentRoles();
+            userDao.deleteUserRoleById(userId);
+            User_Role userRole = new User_Role();
+            List<Integer> roleIdList = new ArrayList<>();
+            if (Objects.nonNull(currentRoles) && currentRoles.size()>0) {
+                for (String roleName: currentRoles) {
+                    Integer roleId = roleDao.queryRoleByName(roleName).getId();
+                    roleIdList.add(roleId);
+                }
+                if (!roleIdList.isEmpty()) {
+                    userRole.setUserID(userId);
+                    userRole.setRoleID(roleIdList);
+                    userDao.addUserRole(userRole);
+                }
+                jsonRespBo.setCode("1");
+            }
+        } catch (Exception e) {
+            logger.error("用户角色授权错误！msg: "+e.getMessage());
+            jsonRespBo.setCode("0");
+        }
+        return jsonRespBo;
+    }
+
 
 }

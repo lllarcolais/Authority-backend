@@ -6,6 +6,7 @@ public class Data_Permission extends SysInfo{
     private Integer userId;
     private String resourceName;
     private Integer resourceId;
+    private String resourceValue;
 
     public Integer getId() {
         return id;
@@ -37,5 +38,13 @@ public class Data_Permission extends SysInfo{
 
     public void setResourceId(Integer resourceId) {
         this.resourceId = resourceId;
+    }
+
+    public String getResourceValue() {
+        return resourceValue;
+    }
+
+    public void setResourceValue(String resourceValue) {
+        this.resourceValue = resourceValue;
     }
 }

@@ -35,6 +35,7 @@ public class ServiceAspect {
     private static final List methodHandleList = Arrays.asList(
             "UserServiceImpl.deleteUserById(..)",
             "UserServiceImpl.queryUserById(..)",
+            "UserServiceImpl.queryRoleByUserId(..)",
             "UserServiceImpl.updateUser(..)",
 
             "RoleServiceImpl.queryRoleById(..)",
@@ -78,7 +79,7 @@ public class ServiceAspect {
         Object[] args = joinPoint.getArgs();
         String[] argNames = ((MethodSignature) joinPoint.getSignature()).getParameterNames();
         String fullName = joinPoint.getSignature().toShortString();
-        System.out.println("args:"+ args[0].toString() + " argNames:" + argNames.toString() + " fullName:" + fullName);
+//        System.out.println("args:"+ args[0].toString() + " argNames:" + argNames.toString() + " fullName:" + fullName);
 
         if (!methodHandleList.contains(fullName)) {
             return joinPoint.proceed();
@@ -128,6 +129,7 @@ public class ServiceAspect {
                 if (idStr != null) {
                     id = Integer.valueOf(idStr);
                 }
+                break;
             }
             if (Objects.equals(RESOURCE_USER, argNames[i])) {
                 User user = (User) args[i];

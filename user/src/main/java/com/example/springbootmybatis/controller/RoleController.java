@@ -5,6 +5,7 @@ import com.example.springbootmybatis.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -17,6 +18,17 @@ public class RoleController {
     @CrossOrigin
     public List<Role> listRole(){
         return roleService.listRole();
+    };
+
+    @GetMapping("/roleName")
+    @CrossOrigin
+    public List listRoleName(){
+        List<Role> roleList = roleService.listRole();
+        List nameList = new ArrayList();
+        for (Role r: roleList) {
+            nameList.add(r.getName());
+        }
+        return nameList;
     };
 
     @GetMapping("/{id}")

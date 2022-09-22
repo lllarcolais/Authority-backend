@@ -66,6 +66,7 @@ public class LoginServiceImpl implements ILoginService{
                 redisTemplate.boundValueOps("userId").set(authUser.getId());
 
                 List roleList = authService.getRole(authUser.getId());
+                redisTemplate.delete("roleList");
                 if (Objects.nonNull(roleList) && roleList.size()>0) {
                     redisTemplate.opsForList().rightPushAll("roleList",roleList);
                 } else {

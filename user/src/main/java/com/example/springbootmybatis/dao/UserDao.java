@@ -1,7 +1,9 @@
 package com.example.springbootmybatis.dao;
 
 import com.example.springbootmybatis.annotation.DataPermission;
+import com.example.springbootmybatis.pojo.Role;
 import com.example.springbootmybatis.pojo.User;
+import com.example.springbootmybatis.pojo.User_Role;
 import com.example.springbootmybatis.pojo.query.UserQuery;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -32,6 +34,9 @@ public interface UserDao {
     @DataPermission(enable = false)
     public User queryUserById(Integer id);
 
+    @DataPermission(enable = false)
+    public Role queryRoleByUserId(Integer id);
+
     //根据id删除用户
     @DataPermission
     public int deleteUserById(Integer id);
@@ -42,5 +47,11 @@ public interface UserDao {
 
     //新增用户
     public int addUser(User user);
+
+    @DataPermission(enable = false)
+    public int deleteUserRoleById(Integer userId);
+
+    @DataPermission(enable = false)
+    public int addUserRole(User_Role userRole);
 
 }

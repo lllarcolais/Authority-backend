@@ -1,5 +1,6 @@
 package com.example.springbootmybatis.service;
 
+import com.example.springbootmybatis.pojo.AssignRoleBo;
 import com.example.springbootmybatis.pojo.JsonRespBo;
 import com.example.springbootmybatis.pojo.User;
 import com.example.springbootmybatis.pojo.query.UserQuery;
@@ -23,9 +24,13 @@ public interface UserService {
     //根据id查询用户
     public JsonRespBo queryUserById(Integer id);
 
+    public JsonRespBo queryRoleByUserId(Integer id);
+
     //修改用户
     public boolean updateUser(User user);
 
     //新增用户
     public boolean addUser(User user);
+
+    public JsonRespBo assignRole(AssignRoleBo assignRoleBo);
 }

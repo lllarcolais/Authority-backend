@@ -15,7 +15,7 @@
     </select>
 
     <select id="rawUserMenu" parameterType="int" resultType="com.example.springbootmybatis.pojo.AuthMenu">
-        select g.name userName, h.* from mybatis.user g left join(
+        select distinct(h.permissionId), h.permission, h.pid from mybatis.user g left join(
             select e.userID, f.* from mybatis.user_role e join(
                 select c.name roleName, d.* from mybatis.role c join(
                     select roleID, permissionID, permission, pid, url

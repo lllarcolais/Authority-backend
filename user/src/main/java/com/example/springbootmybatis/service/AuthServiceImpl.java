@@ -40,10 +40,12 @@ public class AuthServiceImpl implements AuthService{
                 result.setMessage("获取权限成功！");
                 result.setData(data);
             } else {
+                result.setData(data);
                 result.setCode("0");
                 result.setMessage("获取权限失败！");
             }
         } catch (Exception e) {
+            result.setData(new ArrayList<>());
             result.setCode("0");
             result.setMessage("获取权限错误！");
         }

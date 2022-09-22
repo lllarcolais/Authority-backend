@@ -3,7 +3,7 @@ package com.example.springbootmybatis.pojo;
 public class User_Role {
     private Integer id;
     private Integer userID;
-    private Integer roleID;
+    private Object roleID;
 
     public Integer getId() {
         return id;
@@ -21,11 +21,11 @@ public class User_Role {
         this.userID = userID;
     }
 
-    public Integer getRoleID() {
+    public Object getRoleID() {
         return roleID;
     }
 
-    public void setRoleID(Integer roleID) {
+    public void setRoleID(Object roleID) {
         this.roleID = roleID;
     }
 }

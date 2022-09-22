@@ -87,34 +87,34 @@ public class ExecutorInterceptor implements Interceptor {
                 Objects.equals(SqlCommandType.DELETE, sqlCommandType)){
             if (!tableWithoutCreateBy.contains(tableNames.get(0).toUpperCase())){
                 Integer userId = UserInfoUtils.getUserId();
-                if (sql.indexOf("WHERE") > 0 || sql.indexOf("where") > 0){
+                if (sql.indexOf(" WHERE ") > 0 || sql.indexOf(" where ") > 0){
                     sql = sql + " AND createBy = " + userId;
                 } else {
                     sql = sql + " WHERE createBy = " + userId;
                 }
             }
         } else if (Objects.equals(SqlCommandType.SELECT, sqlCommandType)){
-            System.out.println(1);
+
             for (String tableName : tableNames) {
-                System.out.println(2);
+
                 if (!tableWithoutCreateBy.contains(tableName.toUpperCase())){
-                    System.out.println(3);
+
                     Integer userId =  UserInfoUtils.getUserId();
-                    if (sql.indexOf("FROM " + tableName) > 0) {
-                        System.out.println(4);
-                        sql = sql.replaceAll("FROM " + tableName + " ", "FROM (SELECT * FROM " + tableName + " WHERE  createBy =" + userId + ")");
+                    if (sql.indexOf(" FROM " + tableName) > 0) {
+
+                        sql = sql.replaceAll(" FROM " + tableName + " ", " FROM (SELECT * FROM " + tableName + " WHERE  createBy =" + userId + ")");
                     }
-                    if (sql.indexOf("from " + tableName) > 0) {
-                        System.out.println(5);
-                        sql = sql.replaceAll("from " + tableName + " ", "from (select * from " + tableName + " WHERE  createBy =" + userId + ")");
+                    if (sql.indexOf(" from " + tableName) > 0) {
+
+                        sql = sql.replaceAll(" from " + tableName + " ", " from (select * from " + tableName + " WHERE  createBy =" + userId + ")");
                     }
-                    if (sql.indexOf("JOIN " + tableName) > 0) {
-                        System.out.println(6);
-                        sql = sql.replaceAll("JOIN " + tableName + " ", "JOIN (SELECT * FROM " + tableName + " WHERE  createBy =" + userId + ")");
+                    if (sql.indexOf(" JOIN " + tableName) > 0) {
+
+                        sql = sql.replaceAll(" JOIN " + tableName + " ", " JOIN (SELECT * FROM " + tableName + " WHERE  createBy =" + userId + ")");
                     }
-                    if (sql.indexOf("join " + tableName) > 0) {
-                        System.out.println(7);
-                        sql = sql.replaceAll("join " + tableName + " ", "join (select * from " + tableName + " WHERE  createBy =" + userId + ") as cb");
+                    if (sql.indexOf(" join " + tableName) > 0) {
+
+                        sql = sql.replaceAll(" join " + tableName + " ", " join (select * from " + tableName + " WHERE  createBy =" + userId + ") as cb");
                     }
                 }
             }

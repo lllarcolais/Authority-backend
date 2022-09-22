@@ -7,18 +7,28 @@
         from mybatis.user as a;
     </select>
 
-    <select id="listUserByName" parameterType="com.example.springbootmybatis.pojo.query.UserQuery" resultType="com.example.springbootmybatis.pojo.User">
-        select *
-        from mybatis.user as a
+    <select id="listUserByName" parameterType="com.example.springbootmybatis.pojo.query.UserQuery" resultType="com.example.springbootmybatis.pojo.UserListBo">
+        select u.name as userName, u.id as userId, group_concat(a.roleName) roleName
+        from mybatis.user as u left join
+            (select ur.userId, ur.roleId, r.name roleName
+            from mybatis.user_role as ur join mybatis.role as r
+            on ur.roleId = r.id) a on u.id = a.userId
+        group by userName, u.id
         <where>
             <if test="name != null and name != ''">
                 and a.name like concat('%',#{name},'%')
             </if>
         </where>
+        order by userId
     </select>
 
     <select id="listUserByIdSet" resultType="com.example.springbootmybatis.pojo.User">
-        select * from mybatis.user
+        select u.name as userName, u.id as userId, group_concat(a.roleName) roleName
+        from mybatis.user as u left join
+        (select ur.userId, ur.roleId, r.name roleName
+        from mybatis.user_role as ur join mybatis.role as r
+        on ur.roleId = r.id) a on u.id = a.userId
+        group by userName, u.id
         where 
         <choose>
             <when test="set != null and set.size()>0">
@@ -34,6 +44,7 @@
         <if test="userQuery.name != null and userQuery.name != ''">
             and name like concat('%',#{userQuery.name, jdbcType=VARCHAR},'%')
         </if>
+        order by userId
     </select>
 
     <select id="queryUserByName" parameterType="com.example.springbootmybatis.pojo.User" resultType="com.example.springbootmybatis.pojo.User">
@@ -56,6 +67,12 @@
         where a.id=#{id};
     </select>
 
+    <select id="queryRoleByUserId" parameterType="int" resultType="com.example.springbootmybatis.pojo.Role">
+        select r.*
+        from mybatis.user_role as ur join mybatis.role as r on ur.roleId = r.id
+        where ur.id=#{id};
+    </select>
+
     <update id="updateUser" parameterType="com.example.springbootmybatis.pojo.User">
         update mybatis.user
         set name=#{name}, pwd=#{pwd}, salt=#{salt}, lastmodifiedTime=#{lastmodifiedTime}, lastmodifiedBy=#{lastmodifiedBy}
@@ -66,5 +83,17 @@
     <insert id="addUser" parameterType="com.example.springbootmybatis.pojo.User">
         insert into mybatis.user(name,pwd,salt,createTime,createBy)
         values(#{name},#{pwd},#{salt},#{createTime},#{createBy});
+    </insert>
+
+    <delete id="deleteUserRoleById" parameterType="Integer">
+        delete from mybatis.user_role where userId = #{userId}
+    </delete>
+
+    <insert id="addUserRole" parameterType="com.example.springbootmybatis.pojo.User_Role">
+        insert into mybatis.user_role(userId, roleId)
+        values
+        <foreach collection="roleID" item="role" separator=",">
+            (#{userID}, #{role})
+        </foreach>
     </insert>
 </mapper>
